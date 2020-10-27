@@ -1,0 +1,6 @@
+framework module Pods_Sliding_Card {
+  umbrella header "Pods-Sliding Card-umbrella.h"
+
+  export *
+  module * { export * }
+}

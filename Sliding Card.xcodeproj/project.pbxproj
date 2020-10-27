@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2E72178277F0EF135C11BD5 /* Pods_Sliding_Card.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB737F3F9FD0C844D8D4DAC /* Pods_Sliding_Card.framework */; };
 		DE1108AC2547E06C00263680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1108AB2547E06C00263680 /* AppDelegate.swift */; };
 		DE1108AE2547E06C00263680 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1108AD2547E06C00263680 /* SceneDelegate.swift */; };
 		DE1108B02547E06C00263680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1108AF2547E06C00263680 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6EB737F3F9FD0C844D8D4DAC /* Pods_Sliding_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sliding_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E94470EC2593990E2F64A5 /* Pods-Sliding Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sliding Card.release.xcconfig"; path = "Target Support Files/Pods-Sliding Card/Pods-Sliding Card.release.xcconfig"; sourceTree = "<group>"; };
 		DE1108A82547E06C00263680 /* Sliding Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sliding Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1108AB2547E06C00263680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE1108AD2547E06C00263680 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		DE1108B42547E06F00263680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE1108B72547E06F00263680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE1108B92547E06F00263680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECC68F4B84F024CF70DE06F /* Pods-Sliding Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sliding Card.debug.xcconfig"; path = "Target Support Files/Pods-Sliding Card/Pods-Sliding Card.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E72178277F0EF135C11BD5 /* Pods_Sliding_Card.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E9A16CE11255EF9CAF4873E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EECC68F4B84F024CF70DE06F /* Pods-Sliding Card.debug.xcconfig */,
+				D3E94470EC2593990E2F64A5 /* Pods-Sliding Card.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A0145F4213C577035D827466 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EB737F3F9FD0C844D8D4DAC /* Pods_Sliding_Card.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE11089F2547E06C00263680 = {
 			isa = PBXGroup;
 			children = (
 				DE1108AA2547E06C00263680 /* Sliding Card */,
 				DE1108A92547E06C00263680 /* Products */,
+				7E9A16CE11255EF9CAF4873E /* Pods */,
+				A0145F4213C577035D827466 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE1108BC2547E06F00263680 /* Build configuration list for PBXNativeTarget "Sliding Card" */;
 			buildPhases = (
+				193997D6320D52D3DF92C406 /* [CP] Check Pods Manifest.lock */,
 				DE1108A42547E06C00263680 /* Sources */,
 				DE1108A52547E06C00263680 /* Frameworks */,
 				DE1108A62547E06C00263680 /* Resources */,
+				F10233A178E3112DDB671685 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		193997D6320D52D3DF92C406 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sliding Card-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F10233A178E3112DDB671685 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sliding Card/Pods-Sliding Card-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sliding Card/Pods-Sliding Card-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sliding Card/Pods-Sliding Card-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE1108A42547E06C00263680 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		DE1108BD2547E06F00263680 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECC68F4B84F024CF70DE06F /* Pods-Sliding Card.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		DE1108BE2547E06F00263680 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E94470EC2593990E2F64A5 /* Pods-Sliding Card.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
